@@ -1,4 +1,6 @@
 package br.com.dio.dto;
 
-public class BoardColumnInfoDTO {
+import br.com.dio.persistence.entity.BoardColumnKindEnum;
+
+public record BoardColumnInfoDTO(Long id, int order, BoardColumnKindEnum kind) {
 }
